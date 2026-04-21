@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zikang Tian - Job Poster</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700&family=Source+Sans+3:wght@400;600;700&display=swap');
+
+  *{margin:0;padding:0;box-sizing:border-box}
+
+  body{
+    font-family:'Source Sans 3','Helvetica Neue',Arial,sans-serif;
+    background:#f5f5f0;
+    display:flex;justify-content:center;align-items:center;
+    min-height:100vh;padding:2rem;
+    color:#1a1a1a;
+  }
+
+  .poster{
+    width:620px;
+    background:#fff;
+    border:2px solid #1a1a1a;
+    padding:44px 48px;
+  }
+
+  /* ---- Title ---- */
+  .title-block{
+    text-align:center;
+    border-bottom:2px solid #1a1a1a;
+    padding-bottom:20px;
+    margin-bottom:24px;
+  }
+  .title-block h1{
+    font-family:'Crimson Pro',Georgia,serif;
+    font-size:30px;font-weight:700;
+    letter-spacing:.5px;
+  }
+  .title-block .zh{
+    font-size:18px;font-weight:400;color:#555;margin-top:2px;
+  }
+  .title-block .affiliation{
+    font-size:13px;color:#444;margin-top:8px;line-height:1.6;
+  }
+
+  .seeking{
+    text-align:center;
+    font-size:15px;font-weight:700;
+    letter-spacing:1px;
+    border:2px solid #1a1a1a;
+    padding:10px 20px;
+    margin-bottom:24px;
+  }
+
+  .directions{
+    display:flex;justify-content:center;gap:16px;
+    margin-bottom:24px;
+  }
+  .dir-tag{
+    font-size:12px;font-weight:600;
+    padding:5px 16px;
+    border:1.5px solid #1a1a1a;
+    border-radius:2px;
+  }
+
+  /* ---- Two-column layout ---- */
+  .columns{
+    display:flex;gap:32px;
+    margin-bottom:20px;
+  }
+  .col-left{flex:1}
+  .col-right{width:200px;flex-shrink:0}
+
+  /* ---- Section ---- */
+  .section-title{
+    font-family:'Crimson Pro',Georgia,serif;
+    font-size:15px;font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1.5px;
+    border-bottom:1px solid #999;
+    padding-bottom:4px;
+    margin-bottom:12px;
+  }
+
+  .pub{
+    margin-bottom:12px;
+    font-size:12.5px;line-height:1.55;
+  }
+  .pub .pub-title{font-weight:600}
+  .pub .pub-venue{font-style:italic;color:#555}
+  .pub .pub-note{color:#333;font-size:11.5px}
+
+  .highlight-list{
+    list-style:none;margin-bottom:20px;
+  }
+  .highlight-list li{
+    font-size:13px;line-height:1.6;
+    padding-left:14px;position:relative;
+    margin-bottom:4px;
+  }
+  .highlight-list li::before{
+    content:'\2022';position:absolute;left:0;font-weight:700;
+  }
+
+  .skills-block{margin-bottom:20px}
+  .skill-category{
+    font-size:12px;margin-bottom:6px;line-height:1.5;
+  }
+  .skill-category strong{font-weight:700}
+
+  /* ---- QR bottom ---- */
+  .bottom-bar{
+    border-top:2px solid #1a1a1a;
+    padding-top:20px;
+    display:flex;align-items:center;gap:24px;
+  }
+
+  .qr-area{
+    flex-shrink:0;text-align:center;
+  }
+  .qr-area img{
+    width:108px;height:108px;
+    border:1px solid #ccc;
+  }
+  .qr-area .hint{
+    font-size:10px;color:#777;margin-top:4px;
+  }
+
+  .contact-block{flex:1;font-size:12.5px;line-height:1.8}
+  .contact-block .homepage{
+    font-size:14px;font-weight:700;margin-bottom:4px;
+  }
+  .contact-block .item{color:#333}
+
+  .expect-block{
+    flex-shrink:0;width:180px;
+    font-size:12.5px;line-height:1.7;
+    text-align:right;color:#333;
+    border-left:1px solid #ccc;
+    padding-left:20px;
+  }
+  .expect-block .expect-title{
+    font-family:'Crimson Pro',Georgia,serif;
+    font-size:13px;font-weight:700;
+    text-transform:uppercase;letter-spacing:1px;
+    margin-bottom:6px;color:#1a1a1a;
+  }
+  .expect-block .expect-item{margin-bottom:2px}
+
+  @media print{
+    body{background:#fff;padding:0}
+    .poster{border:none;width:100%}
+  }
+</style>
+</head>
+<body>
+
+<div class="poster">
+
+  <div class="title-block">
+    <h1>Zikang Tian - Job Seeking</h1>
+    <div class="zh">田子康 - 求职</div>
+    <div class="affiliation">
+      Ph.D. Candidate (expected in 2026.06), Institute of Computing Technology, Chinese Academy of Sciences<br>
+      Advisors: Prof. Xing Hu &amp; Prof. Zidong Du
+    </div>
+  </div>
+
+  <div class="seeking">Seeking Base Model Positions(寻求基础模型职位)</div>
+
+  <div class="directions">
+    <span class="dir-tag">Pretraining</span>
+    <span class="dir-tag">Post-training</span>
+    <span class="dir-tag">Agent</span>
+    <span class="dir-tag">etc.</span>
+  </div>
+
+  <div class="columns">
+    <div class="col-left">
+
+      <div class="section-title">Selected Publications</div>
+
+      <div class="pub">
+        <div class="pub-title">Code Driven Planning with Domain-Adaptive Selector</div>
+        <div class="pub-venue">ICLR 2026 &mdash; First Author</div>
+        <div class="pub-note">+19% success rate, -79% token cost</div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Decompose a Task into Generalizable Subtasks in Multi-Agent Reinforcement Learning</div>
+        <div class="pub-venue">NeurIPS 2023 &mdash; First Author</div>
+        <div class="pub-note">+22%~34% success rate on unseen tasks. Cited: 27</div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Boosting VLM's Spatial Intelligence via Latent Space World Model</div>
+        <div class="pub-venue">Nature Machine Intelligence (Under Review) &mdash; First Author</div>
+        <div class="pub-note">+51% on 3D spatial reasoning benchmarks (Mental Rotation Test, Origami, Rubik's Cube, etc.)</div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">HYVIN: Grounding LLMs with Self-Driven Skill Learning</div>
+        <div class="pub-venue">AAAI 2024 &mdash; Co-author</div>
+      </div>
+
+      <div class="pub">
+        <div class="pub-title">Luban: Building Open-Ended Creative Agents via Autonomous Embodied Verification</div>
+        <div class="pub-venue">Nature Machine Intelligence (Under Review) &mdash; Co-author</div>
+      </div>
+
+    </div>
+
+    <div class="col-right">
+
+      <div class="section-title">Highlights</div>
+      <ul class="highlight-list">
+        <li><strong>6</strong> papers with <strong>3</strong> at top venues</li>
+        <li><strong>3</strong> first-author papers (ICLR & NeurIPS accepted, NMI under review)</li>
+        <li>NeurIPS / AAAI reviewer</li>
+        <li>Hands-on SFT, DPO, PPO, GRPO, DAPO</li>
+        <li>Experience on Robot (VLA, Robosuite/MimicGen/Robomimic)</li>
+      </ul>
+
+      <div class="section-title">Skills</div>
+      <div class="skills-block">
+        <div class="skill-category"><strong>LLM:</strong> Transformer, LLaMA, Qwen, LLaMA-Factory, LoRA/QLoRA, PPO/GRPO/DAPO</div>
+        <div class="skill-category"><strong>RL:</strong> DQN, PPO, SAC, Multi-Agent</div>
+        <div class="skill-category"><strong>Agent:</strong> ReAct, Tool Use, Code Generation, Planning</div>
+        <div class="skill-category"><strong>Lang:</strong> Python, C/C++, Linux, Shell</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="qr-area">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=https://felixvillas.github.io/" alt="QR Code">
+      <div class="hint">Scan for Homepage <br>and <strong>Curriculum Vitae</strong></div>
+    </div>
+    <div class="contact-block">
+      <div class="homepage">https://felixvillas.github.io/</div>
+      <div class="item">Email: tianzikang1999@163.com</div>
+      <div class="item">Phone: +86-139-3094-1781</div>
+      <div class="item">GitHub: github.com/Felixvillas</div>
+      <div class="item">Google Scholar: Zikang Tian</div>
+    </div>
+    <div class="expect-block">
+      <div class="expect-title">Availability</div>
+      <div class="expect-item" style="margin-top:8px">Preferred location:</div>
+      <div class="expect-item"><strong>Beijing, China</strong></div>
+      <div class="expect-item" style="margin-top:8px">Open to all base model roles: <strong>Pretraining, Post-training, Agent, etc.</strong></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
